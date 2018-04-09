@@ -1,5 +1,12 @@
 <html>
     <body>
+	    <h2>Schreibe im Chat!</h2> <br/>
+        <form action="/" method="post">
+            <div>Username: <input name="name" /></div> <br/>
+            <div>Nachricht: <textarea name="content" rows="3" cols="60"></textarea></div> <br/>
+            <div><input type="submit" value="Abschicken"></div><br/><br/>
+        </form>
+		
         {% if results %}
             <h2>Chat</h2>
 
@@ -8,11 +15,6 @@
             {% endfor %}
         {% endif %}
 
-        <h2>Schreibe im Chat!</h2> <br/>
-        <form action="/" method="post">
-            <div>Username: <input name="name" /></div> <br/>
-            <div>Nachricht: <textarea name="content" rows="3" cols="60"></textarea></div> <br/>
-            <div><input type="submit" value="Abschicken"></div>
-        </form>
+
     </body>
 </html>
